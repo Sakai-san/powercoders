@@ -1,8 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+
+import Image from "./Image";
+import logo from "./logo.svg";
+import "./App.css";
+
+const images = [
+  {
+    id: 1,
+    filename: "losc.png",
+    title: "logo de l'équipte du LOSC",
+    likes: 2
+  },
+  {
+    id: 2,
+    filename: "lyon.png",
+    title: "logo de l'équipe de Lyon",
+    likes: 3
+  }
+];
 
 function App() {
+  return images.map(image => <Image key={image.id} {...image} />);
+
   return (
     <div className="App">
       <header className="App-header">
