@@ -20,6 +20,7 @@
     "sequelize-skeleton": "npx sequelize init:models; npx sequelize init:config",
     "init-db": "cd /opt/lampp/bin/ && echo 'DROP DATABASE IF EXISTS powercoders; CREATE DATABASE powercoders CHARACTER SET utf8 COLLATE utf8_general_ci' | ./mysql -u root && cd -"
   },
+  "proxy": "http://localhost:8080",
   "eslintConfig": {
     "extends": "react-app"
   },

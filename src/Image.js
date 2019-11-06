@@ -6,17 +6,11 @@ class Image extends React.Component {
   };
 
   doLike = e => {
-    fetch(`http://localhost/image/like/${this.props.id}`, {
+    fetch(`http://localhost:3000/image/like/${this.props.id}`, {
       method: "put"
-    })
-      .then(res => res.json())
-      .then(res => {
-        if (res.status === 200) {
-          console.log("res", res);
-          this.setState(prevState => ({ likes: prevState.likess + 1 }));
-        }
-      })
-      .catch(error => console.log("error", error));
+    }).then(res => {
+      this.setState(prevState => ({ likes: prevState.likes + 1 }));
+    });
   };
 
   render() {
