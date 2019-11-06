@@ -23,7 +23,7 @@ module.exports = (app, db) => {
           title: req.body.title,
           fileName: req.body.fileName
         },
-        {.image.dataValues
+        {
           where: {
             id: req.params.id
           }
