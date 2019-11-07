@@ -4,11 +4,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 This repo aims to introduce the basic concepts of react such as react component, component state, CSS in JS, unidirectional data flow, declarative UI programming.
 
-This repo is not meant for productive environement.
+This repo is not meant for any production environment.
 
 ## Setup
 
-This repo requires you to have a MySQL or MariaDB server. Indeed data are supplied to frontend by means of a REST api on top of the database.
+This repo requires you to have a MySQL or MariaDB server. Indeed data are supplied to the frontend by means of a REST api on top of the database.
 
 ## Launch the app
 
