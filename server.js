@@ -79,6 +79,11 @@ const images = [
     fileName: "faris-mohammed-z0UfETjRl0g-unsplash.jpg",
     title: "red, yellow, and blue flower origami",
     likes: random(10, 1000)
+  },
+  {
+    fileName: "bence-balla-schottner-xrHNKvbcmgk-unsplash.jpg",
+    title: "silver car in highway",
+    likes: random(10, 1000)
   }
 ];
 
