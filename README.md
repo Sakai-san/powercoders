@@ -2,7 +2,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Intro
 
-This repo aims to introduce the basic concepts of react such as react component, component state, CSS in JS, unidirectional data flow, declarative programming.
+This repo aims to introduce the basic concepts of react such as react component, component state, CSS in JS, unidirectional data flow, declarative UI programming.
 
 This repo is not meant for productive environement.
 
