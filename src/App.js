@@ -7,13 +7,13 @@ import "./App.css";
 const images = [
   {
     id: 1,
-    filename: "losc.png",
+    fileName: "losc.png",
     title: "logo de l'équipte du LOSC",
     likes: 2
   },
   {
     id: 2,
-    filename: "lyon.png",
+    fileName: "lyon.png",
     title: "logo de l'équipe de Lyon",
     likes: 3
   }

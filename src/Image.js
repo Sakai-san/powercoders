@@ -14,11 +14,11 @@ class Image extends React.Component {
   };
 
   render() {
-    const { title, filename } = this.props;
+    const { title, fileName } = this.props;
 
     return (
       <div>
-        <img src={"../public/" + filename} />
+        <img src={`http://localhost:3000/${fileName}`} />
         <h2>{title}</h2>
         <div>
           <button onClick={this.doLike} />
