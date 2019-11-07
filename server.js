@@ -64,6 +64,21 @@ const images = [
     fileName: "justin-bautista-3CKH4c4XHvY-unsplash.jpg",
     title: "white and brown pagoda house",
     likes: random(10, 1000)
+  },
+  {
+    fileName: "zhang-kaiyv-_i-v968x-KQ-unsplash.jpg",
+    title: "people inside bus",
+    likes: random(10, 1000)
+  },
+  {
+    fileName: "guogete-BVybt-KTJAE-unsplash.jpg",
+    title: "green and white balloons",
+    likes: random(10, 1000)
+  },
+  {
+    fileName: "faris-mohammed-z0UfETjRl0g-unsplash.jpg",
+    title: "red, yellow, and blue flower origami",
+    likes: random(10, 1000)
   }
 ];
 

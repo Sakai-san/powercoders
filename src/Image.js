@@ -15,7 +15,7 @@ const Img = styled.img`
 const Title = styled.div`
   font-weight: bold;
   font-size: 13px;
-  padding: 0 5px;
+  padding: 5px 5px;
   max-width: 250px;
 `;
 
