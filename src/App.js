@@ -1,45 +1,56 @@
 import React from "react";
+import styled from "styled-components";
 
 import Image from "./Image";
 import logo from "./logo.svg";
 import "./App.css";
 
-const images = [
-  {
-    id: 1,
-    fileName: "losc.png",
-    title: "logo de l'équipte du LOSC",
-    likes: 2
-  },
-  {
-    id: 2,
-    fileName: "lyon.png",
-    title: "logo de l'équipe de Lyon",
-    likes: 3
+const Images = styled.div`
+  display: flex;
+  flex-wrap: row wrap;
+`;
+
+class App extends React.Component {
+  state = {
+    images: []
+  };
+
+  componentDidMount() {
+    fetch(`http://localhost:3000/images/`)
+      .then(res => res.json())
+      .then(images => {
+        this.setState({ images });
+      });
   }
-];
 
-function App() {
-  return images.map(image => <Image key={image.id} {...image} />);
+  render() {
+    return (
+      <Images>
+        {this.state.images.map(image => (
+          <Image key={image.id} {...image} />
+        ))}
+      </Images>
+    );
 
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+      <div className="App">
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <p>
+            Edit <code>src/App.js</code> and save to reload.
+          </p>
+          <a
+            className="App-link"
+            href="https://reactjs.org"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Learn React
+          </a>
+        </header>
+      </div>
+    );
+  }
 }
 
 export default App;
