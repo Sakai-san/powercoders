@@ -8,12 +8,16 @@ This repo is not meant for any production environment.
 
 ## Setup
 
-This repo requires you to have a MySQL or MariaDB server. Indeed data are supplied to the frontend by means of a REST api on top of the database.
+This repo requires you to have the following softwares installed :
+
+- MySQL or MariaDB server. Indeed data are supplied to the frontend by means of a REST api on top of the database.
+- Node.js. Use [nvm](https://github.com/nvm-sh/nvm) on that purpose.
 
 ## Launch the app
 
 - First edit the `config/config.json` file about your database settings.
 - Launch your database server.
+- Run `npm i`.
 - Adjust the script called `init-db` located in the `package.json` file to your local database settings.
 - run `npm run api` for making the REST api available.
 - In another console, run `npm run start` for serving the react app.
