@@ -5,7 +5,8 @@ import Image from "./Image";
 
 const Images = styled.div`
   display: flex;
-  flex-wrap: row wrap;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 `;
 
 class App extends React.Component {

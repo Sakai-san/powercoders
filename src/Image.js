@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 const ImageWrapper = styled.div`
   display: flex;
+  margin: 10px 0;
   flex-direction: column;
 `;
 
@@ -13,8 +14,9 @@ const Img = styled.img`
 
 const Title = styled.div`
   font-weight: bold;
-  font-size: 12px;
+  font-size: 13px;
   padding: 0 5px;
+  max-width: 250px;
 `;
 
 const Likes = styled.span`
@@ -26,8 +28,11 @@ const Button = styled.button`
   padding: 1px;
   height: 30px;
   width: 30px;
-  background-color: cyan;
+  color: white;
+  background-color: darkblue;
   border-radius: 10px;
+  border: none;
+  cursor: pointer;
 `;
 
 class Image extends React.Component {
