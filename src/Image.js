@@ -26,6 +26,8 @@ const Button = styled.button`
   padding: 1px;
   height: 30px;
   width: 30px;
+  background-color: cyan;
+  border-radius: 10px;
 `;
 
 class Image extends React.Component {
@@ -46,7 +48,7 @@ class Image extends React.Component {
 
     return (
       <ImageWrapper>
-        <Img src={`http://localhost:3000/${fileName}`} />
+        <Img src={`http://localhost:3000/${fileName}`} alt={title} />
         <Title>{title}</Title>
         <div>
           <Button onClick={this.doLike}>Like</Button>
